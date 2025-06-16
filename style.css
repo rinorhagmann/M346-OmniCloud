@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary : #536942;
+    --secondary : #ffd936;
+    --secondaryhover : #dab50f;
+    --white : #efefef;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: var(--primary);
+}
+
+#main {
+    min-height: 70vh;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+#maincontent {
+    margin-top: 110px;
+}
+
+.logo {
+    width: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+
+section {
+    margin: 80px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 25px;
+    position: fixed;
+    backdrop-filter: blur(8px);
+    z-index: 99;
+    top: 0;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    align-items: center;
+}
+
+.nav-list a {
+    color: var(--white);
+}
+
+.btn {
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.btn-secondary {
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.btn-secondary:hover {
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-weight: bold;
+    background: #000000;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    border: none;
+    background: var(--secondary);
+    color: var(--primary);
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    border: none;
+    background: var(--secondaryhover);
+    color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    color: var(--white);
+}
+
+.main-content .intro-heading {
+    font-size: 50px;
+}
+
+.main-content .main-heading {
+    font-size: 110px;
+    margin-top: -20px;
+}
+
+.main-content p {
+    max-width: 250px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+    width: 40px;
+    height:40px;
+}
+
+.section-title h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.section-title .line {
+    width: 150px;
+    height: 4px;
+    border: 10px;
+    background: var(--secondary);
+    margin: auto;
+}
+
+
+@media (max-width: 768px) {
+    .service {
+        width: 100%;
+    }
+}
+
+.services {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.service#Abo {
+    transition: transform 0.3s ease;
+}
+
+.service#Abo:hover {
+    transform: scale(1.05);
+}
+
+.service {
+    width: 350px;
+    background: #f2f2f2;
+    padding: 30px;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.service2 {
+    width: 350px;
+    background: #f2f2f2;
+    padding: 30px;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    font-size: large;/*Grosse Schrift*/
+    border: 3px solid #ccc;
+    font-family: "DM Sans", sans-serif;
+  }
+
+  input[type="text"]:hover { /*Beim drüberfahren mit der Maus:*/
+    font-size: large;/*Grosse Schrift*/
+    color: #fff;/*Weisse Schrift*/
+    background: #000;/*Schwarzer Hintergrund*/
+    border: 3px solid lightblue;/*Abgrenzung soll 3px breit. durchgezogen und grün sein*/
+  }
+
+  input[type="text"]:focus { /*Sobald angewählt*/
+    font-size: large;/*Grosse Schrift*/
+    color: #fff;/*Weisse Schrift*/
+    background: #000;/*Schwarzer Hintergrund*/
+    border: 3px solid lightblue;/*Abgrenzung soll 3px breit. durchgezogen und grün sein*/
+  }
+
+  input[type="email"] {
+    font-size: large;/*Grosse Schrift*/
+    border: 3px solid #ccc;
+    font-family: "DM Sans", sans-serif;
+  }
+
+  input[type="email"]:hover { /*Beim drüberfahren mit der Maus:*/
+    font-size: large;/*Grosse Schrift*/
+    color: #fff;/*Weisse Schrift*/
+    background: #000;/*Schwarzer Hintergrund*/
+    border: 3px solid lightblue;/*Abgrenzung soll 3px breit. durchgezogen und grün sein*/
+  }
+
+  input[type="email"]:focus { /*Sobald angewählt*/
+    font-size: large;/*Grosse Schrift*/
+    color: #fff;/*Weisse Schrift*/
+    background: #000;/*Schwarzer Hintergrund*/
+    border: 3px solid lightblue;/*Abgrenzung soll 3px breit. durchgezogen und grün sein*/
+  }
+
+footer {
+    
+    bottom: 0;
+}
+
+footer .container {
+    display: flex;
+    padding: 20px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+}
+
+.footer-links li a {
+    color: var(--primary);
+}
+
+.footerLogo {
+    height: 35px;
+}
+
+hr{
+    border: 1px solid lightgrey;
+    margin: 0 15%;
+}
+
+select {
+    padding: 8px;/*Abstand zu allen Seiten beträgt 8px*/
+    border: 3px solid #ccc;/*Abgrenzung 3px breit, durchgezogen, grau*/
+    outline: none;/*Keine Aussenlinie*/
+    cursor: pointer;/*Maus soll auf einen Link hinweisen*/
+    font-size: large;/*Grosse Schrift*/
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  select:focus {
+    border: 3px solid lightblue;/*Sobald angewählt Abgrenzung 3px breit, durchgezogen, grün*/
+    background: #000;/*Schwarzer Hintergrund*/
+    color: #fff;/*Weisse Schrift*/
+    font-size: large;/*Grosse Schrift*/
+  }
+
+  select:hover {
+    border: 3px solid lightblue;/*Sobald mit der Maus drübergrfahren Abgrenzung 3px breit, durchgezogen, grün*/
+    background: #000;/*Schwarzer Hintergrund*/
+    color: #fff;/*Weisse Schrift*/
+    font-size: large;/*Grosse Schrift*/
+  }
+
+  table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid #ccc; /* Horizontale Linie */
+    border-right: 1px solid #ccc;
+    padding: 8px;
+}
+
+
+@media screen and (max-width: 609px) {
+    .menu-btn {
+        display: block;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.975);
+        backdrop-filter: blur(8px);
+        position: absolute;
+        top: 0;
+        right: -900px;
+        width: 80%;
+        height: 100vh;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-list.active {
+        right: 0;
+    }
+
+    .nav-list li {
+        text-align: left;
+        width: 100%;
+        padding: 10px 30px;
+        border-bottom: 1px solid var(--white);
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
